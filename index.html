@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#FF4500" />
+  <title>Diagnóstico Gratuito de Segurança em Altura | SPLW</title>
+  <meta name="description" content="Diagnóstico online gratuito para verificar se a sua obra cumpre a legislação de segurança em trabalhos em altura. Relatório técnico em 24 horas. Em parceria com a Universidade de Coimbra." />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Diagnóstico Gratuito de Segurança em Altura | SPLW" />
+  <meta property="og:description" content="Em 5 minutos, saiba se a sua obra cumpre as normas EN 795. Relatório técnico personalizado em 24 horas." />
+  <meta property="og:locale" content="pt_PT" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/images/splw-logo.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <!-- Meta Pixel placeholder, substituir PIXEL_ID -->
+  <!--
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'PIXEL_ID'); fbq('track', 'PageView');
+  </script>
+  -->
+
+  <!-- GA4 placeholder, substituir GA_MEASUREMENT_ID -->
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date()); gtag('config', 'GA_MEASUREMENT_ID');
+  </script>
+  -->
+</head>
+<body>
+
+  <!-- Sticky CTA Bar -->
+  <div class="sticky-cta" id="stickyCta" aria-hidden="true">
+    <div class="container sticky-cta__inner">
+      <span class="sticky-cta__text">Diagnóstico Gratuito de Segurança, em 5 minutos</span>
+      <a href="#formulario" class="btn btn--primary btn--sm" data-cta="sticky">Começar</a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="https://splw.pt/" class="header__logo" aria-label="SPLW">
+        <img src="assets/images/splw-logo.svg" alt="SPLW" width="120" height="36" />
+      </a>
+      <nav class="header__nav" aria-label="Principal">
+        <a href="#solucao">Como funciona</a>
+        <a href="#autoridade">Porquê SPLW</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a href="#formulario" class="btn btn--primary btn--sm header__cta" data-cta="header">Pedir Diagnóstico</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="container hero__grid">
+      <div class="hero__copy">
+        <h1 class="hero__title">A sua obra<br>cumpre a<br>legislação<br>em altura?<br><span class="text-primary hero__title-sub">Descubra em 5 minutos.</span></h1>
+        <p class="hero__lead">
+          Em Portugal, somos o <strong class="hero__lead-em">3.º país da UE</strong> com maior incidência de acidentes de trabalho não mortais.
+          A responsabilidade legal recai diretamente sobre o TSST e a Direção de Obra.
+          Em 5 minutos, saiba exatamente onde está — e o que precisa de fazer para ficar protegido.
+        </p>
+        <ul class="hero__bullets">
+          <li><span class="check" aria-hidden="true"></span> Conformidade verificada face a EN 795, EN 361 e legislação portuguesa</li>
+          <li><span class="check" aria-hidden="true"></span> Relatório personalizado entregue em 24 horas</li>
+          <li><span class="check" aria-hidden="true"></span> Avaliação por técnicos certificados, em parceria com a Universidade de Coimbra</li>
+        </ul>
+        <div class="hero__actions">
+          <a href="#formulario" class="btn btn--primary btn--lg" data-cta="hero">Pedir Diagnóstico Gratuito</a>
+          <span class="hero__micro">Demora menos de 5 minutos. Recebe o relatório por email.</span>
+        </div>
+        <div class="hero__trust">
+          <div class="trust-item"><strong>Universidade de Coimbra</strong><span>Parceria de I&amp;D</span></div>
+          <div class="trust-divider" aria-hidden="true"></div>
+          <div class="trust-item"><strong>Fabrico Português</strong><span>Único fabricante nacional de linhas de vida</span></div>
+          <div class="trust-divider" aria-hidden="true"></div>
+          <div class="trust-item"><strong>EN 795 / EN 361</strong><span>Normas dominadas</span></div>
+          <div class="trust-divider" aria-hidden="true"></div>
+          <div class="trust-item trust-item--live">
+            <span class="trust-item__dot" aria-hidden="true"></span>
+            <strong>+40 diagnósticos</strong><span>realizados este mês</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__visual" aria-hidden="true">
+        <div class="hero__photo-wrap">
+          <img src="assets/images/hero-passadico.webp" alt="Passadiço de segurança em altura — SPLW" class="hero__photo" />
+          <div class="hero__photo-badge">
+            <span class="hero__photo-badge-num">EN 795</span>
+            <span class="hero__photo-badge-label">Certificado</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS STRIP -->
+  <section class="stats-strip" aria-label="Portugal em números">
+    <div class="container stats-strip__grid">
+      <div class="stat-item">
+        <span class="stat-item__num">3.º</span>
+        <span class="stat-item__label">país da UE em acidentes de trabalho não mortais</span>
+      </div>
+      <div class="stat-item__sep" aria-hidden="true"></div>
+      <div class="stat-item">
+        <span class="stat-item__num">6.º</span>
+        <span class="stat-item__label">em acidentes de trabalho mortais na Europa</span>
+      </div>
+      <div class="stat-item__sep" aria-hidden="true"></div>
+      <div class="stat-item">
+        <span class="stat-item__num">+60%</span>
+        <span class="stat-item__label">redução de acidentes com HST estruturado</span>
+      </div>
+      <div class="stat-item__sep" aria-hidden="true"></div>
+      <div class="stat-item">
+        <span class="stat-item__num">100%</span>
+        <span class="stat-item__label">das coimas são evitáveis com sistemas certificados</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST STRIP -->
+  <section class="trust-strip" aria-hidden="true">
+    <div class="container trust-strip__inner">
+      <span class="trust-strip__label">Reconhecimento &amp; parceria</span>
+      <div class="trust-strip__logos">
+        <span class="trust-logo">Universidade de Coimbra</span>
+        <span class="trust-logo">EN 795</span>
+        <span class="trust-logo">EN 361</span>
+        <span class="trust-logo">EN 360</span>
+        <span class="trust-logo">Fabrico Nacional</span>
+        <span class="trust-logo">MEX / 3D</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEMA -->
+  <section class="problema" id="problema">
+    <div class="container">
+      <header class="section-head section-head--light">
+        <h2>Em Portugal, uma obra parada por incumprimento custa, em média, mais do que prevenir o problema.</h2>
+        <p>A responsabilidade legal recai sobre o TSST e a Direção da Obra. E o risco é maior do que parece.</p>
+      </header>
+      <div class="cards-3">
+        <article class="card-dark">
+          <div class="card-dark__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 9v4"/><path d="M12 17h.01"/><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z"/></svg>
+          </div>
+          <h3>Coimas que param a tesouraria</h3>
+          <p>Falhas em linhas de vida certificadas ou ausência de inspeção anual obrigatória resultam em coimas que podem ultrapassar várias dezenas de milhares de euros, com responsabilidade direta do TSST e da gerência.</p>
+        </article>
+        <article class="card-dark">
+          <div class="card-dark__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3>Inspeções que paralisam a obra</h3>
+          <p>Uma inspeção sem aprovação pode parar a obra durante semanas. Para um Diretor Geral, é margem perdida e prazos contratuais comprometidos.</p>
+        </article>
+        <article class="card-dark">
+          <div class="card-dark__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><line x1="9" y1="12" x2="15" y2="12"/></svg>
+          </div>
+          <h3>Sistemas em que não pode confiar</h3>
+          <p>Equipamentos desconfortáveis levam à não utilização. Sistemas de ancoragem mal instalados ou sem manutenção tornam-se o ponto único de falha entre um dia normal e um acidente grave.</p>
+        </article>
+      </div>
+      <p class="problema__cta">
+        Avalie a sua exposição em 5 minutos.
+        <a href="#formulario" data-cta="problema">Pedir Diagnóstico Gratuito.</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- SOLUÇÃO -->
+  <section class="solucao" id="solucao">
+    <div class="container">
+      <header class="section-head">
+        <span class="eyebrow">Como funciona</span>
+        <h2>Em 5 minutos, sabe exatamente onde está e o que precisa de fazer.</h2>
+        <p>O Diagnóstico Gratuito de Segurança da SPLW avalia a conformidade da sua obra com a legislação de trabalhos em altura e entrega um relatório técnico personalizado.</p>
+      </header>
+
+      <div class="steps">
+        <article class="step">
+          <span class="step__num">01</span>
+          <h3>Responde a 12 perguntas</h3>
+          <p>Sobre o tipo de obra, sistemas de ancoragem existentes, EPIs em uso e datas das últimas inspeções.</p>
+        </article>
+        <article class="step">
+          <span class="step__num">02</span>
+          <h3>Análise técnica em 24 horas</h3>
+          <p>Um técnico certificado avalia as respostas face a EN 795, EN 361 e legislação portuguesa em vigor.</p>
+        </article>
+        <article class="step">
+          <span class="step__num">03</span>
+          <h3>Relatório com plano de ação</h3>
+          <p>Receba por email um relatório claro: pontos críticos, prioridades, normas aplicáveis e próximos passos recomendados.</p>
+        </article>
+      </div>
+
+      <aside class="receive-box" aria-label="O que vai receber">
+        <h3>O que vai receber</h3>
+        <ul>
+          <li><span class="check" aria-hidden="true"></span> Avaliação de conformidade legal</li>
+          <li><span class="check" aria-hidden="true"></span> Riscos identificados e classificados por prioridade</li>
+          <li><span class="check" aria-hidden="true"></span> Normas EN aplicáveis à sua operação</li>
+          <li><span class="check" aria-hidden="true"></span> Estimativa de intervenção, se aplicável</li>
+          <li><span class="check" aria-hidden="true"></span> Acesso direto a um técnico para esclarecimento de dúvidas</li>
+        </ul>
+        <a href="#formulario" class="btn btn--primary btn--lg" data-cta="solucao">Começar Diagnóstico Gratuito</a>
+      </aside>
+    </div>
+  </section>
+
+  <!-- AUTORIDADE -->
+  <section class="autoridade" id="autoridade">
+    <div class="container">
+      <header class="section-head">
+        <span class="eyebrow">Porquê SPLW</span>
+        <h2>Somos o único fabricante nacional de linhas de vida em Portugal. E isso muda tudo.</h2>
+      </header>
+
+      <div class="pillars">
+        <article class="pillar">
+          <div class="pillar__num">01</div>
+          <h3>Fabricamos em Portugal</h3>
+          <p>Não somos revendedores de marcas estrangeiras. Projetamos, fabricamos e instalamos linhas de vida com engenharia portuguesa, o que reduz prazos de entrega e elimina a dependência logística internacional.</p>
+        </article>
+        <article class="pillar">
+          <div class="pillar__num">02</div>
+          <h3>Consórcio com a Universidade de Coimbra</h3>
+          <p>Desenvolvemos os nossos produtos em parceria com a Universidade de Coimbra, usando métodos de fabrico inovadores (MEX/3D) que criam soluções de segurança de última geração.</p>
+        </article>
+        <article class="pillar">
+          <div class="pillar__num">03</div>
+          <h3>Solução completa, um único interlocutor</h3>
+          <p>Projeto, fabrico, instalação técnica e gestão da manutenção anual obrigatória. Sem fornecedores que desaparecem após a instalação. A SPLW acompanha o ciclo de vida completo da sua segurança.</p>
+        </article>
+        <article class="pillar">
+          <div class="pillar__num">04</div>
+          <h3>Equipamentos que os trabalhadores usam mesmo</h3>
+          <p>Os nossos EPIs são desenhados para conforto e funcionalidade. Resultado: maior adesão da equipa e menos resistência ao uso diário.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUTOS -->
+  <section class="produtos" id="produtos">
+    <div class="container">
+      <header class="section-head">
+        <span class="eyebrow">Gama completa</span>
+        <h2>Tudo o que a sua obra precisa, num só fornecedor</h2>
+        <p>Da proteção coletiva em altura ao último par de luvas. Equipamento certificado para toda a equipa, com fabrico nacional e gestão integrada das validades.</p>
+      </header>
+
+      <!-- Categoria 1: EPC -->
+      <article class="prod-cat">
+        <div class="prod-cat__head">
+          <div class="prod-cat__badge">01</div>
+          <div class="prod-cat__title">
+            <span class="prod-cat__tag">Proteção Coletiva</span>
+            <h3>EPC, Proteção Coletiva em Altura</h3>
+            <p>Sistemas que protegem toda a equipa em simultâneo. Projeto, fabrico nacional e instalação técnica certificada, com engenharia portuguesa em consórcio com a Universidade de Coimbra.</p>
+          </div>
+        </div>
+        <ul class="prod-grid">
+          <li class="prod-item">
+            <span class="prod-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h20"/><circle cx="6" cy="12" r="2"/><circle cx="18" cy="12" r="2"/><path d="M8 12h8"/></svg>
+            </span>
+            <div>
+              <strong>Linhas de vida horizontais</strong>
+              <span>Coberturas, fachadas, estruturas industriais</span>
+            </div>
+          </li>
+          <li class="prod-item">
+            <span class="prod-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20"/><circle cx="12" cy="6" r="2"/><circle cx="12" cy="18" r="2"/><path d="M12 8v8"/></svg>
+            </span>
+            <div>
+              <strong>Linhas de vida verticais</strong>
+              <span>Mastros, torres, escadas fixas</span>
+            </div>
+          </li>
+          <li class="prod-item">
+            <span class="prod-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/></svg>
+            </span>
+            <div>
+              <strong>Pontos de ancoragem</strong>
+              <span>Fixos e amovíveis, conforme EN 795</span>
+            </div>
+          </li>
+          <li class="prod-item">
+            <span class="prod-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21V10l9-7 9 7v11"/><path d="M3 21h18"/></svg>
+            </span>
+            <div>
+              <strong>Sistemas para coberturas</strong>
+              <span>Solução completa para cobertura plana e inclinada</span>
+            </div>
+          </li>
+          <li class="prod-item">
+            <span class="prod-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 22 12 4l10 18"/><path d="M5 16h14"/></svg>
+            </span>
+            <div>
+              <strong>Sistemas para telhado</strong>
+              <span>Anti-queda específico para telhado e platibanda</span>
+            </div>
+          </li>
+        </ul>
+        <div class="prod-cat__banner">
+          <img src="assets/images/produto-epc.webp" alt="Linha de vida SPLW instalada em cobertura" loading="lazy" />
+        </div>
+      </article>
+
+      <!-- Categoria 2: EPI Altura -->
+      <article class="prod-cat prod-cat--alt">
+        <div class="prod-cat__head">
+          <div class="prod-cat__badge">02</div>
+          <div class="prod-cat__title">
+            <span class="prod-cat__tag">Trabalhos em Altura</span>
+            <h3>EPI de Altura</h3>
+            <p>Equipamento individual certificado para trabalhos em altura. Desenhados para o máximo conforto e funcionalidade, garantindo adesão real da equipa no uso diário.</p>
+          </div>
+        </div>
+        <ul class="prod-grid">
+          <li class="prod-item">
+            <span class="prod-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 4h12l-2 16H8L6 4z"/><path d="M9 9h6"/><path d="M9 14h6"/></svg>
+            </span>
+            <div>
+              <strong>Arneses anti-queda</strong>
+              <span>Conformes EN 361, vários portes</span>
+            </div>
+          </li>
+          <li class="prod-item">
+            <span class="prod-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="10" width="18" height="4" rx="1"/><circle cx="12" cy="12" r="1.2" fill="currentColor"/></svg>
+            </span>
+            <div>
+              <strong>Cintos de posicionamento</strong>
+              <span>Para trabalho em apoio, EN 358</span>
+            </div>
+          </li>
+          <li class="prod-item">
+            <span class="prod-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            </span>
+            <div>
+              <strong>Antiquedas retráteis</strong>
+              <span>Sistemas auto-bloqueantes, EN 360</span>
+            </div>
+          </li>
+          <li class="prod-item">
+            <span class="prod-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4c4 4 4 12 0 16"/><path d="M20 4c-4 4-4 12 0 16"/><path d="M4 12h16"/></svg>
+            </span>
+            <div>
+              <strong>Absorvedores de energia</strong>
+              <span>Reduz força de impacto em caso de queda</span>
+            </div>
+          </li>
+          <li class="prod-item">
+            <span class="prod-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v8"/><path d="M8 6l4-4 4 4"/><circle cx="12" cy="16" r="5"/></svg>
+            </span>
+            <div>
+              <strong>Descensores</strong>
+              <span>Sistemas para evacuação e resgate em altura</span>
+            </div>
+          </li>
+          <li class="prod-item">
+            <span class="prod-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6c4 0 4 4 8 4s4-4 8-4"/><path d="M3 12c4 0 4 4 8 4s4-4 8-4"/><path d="M3 18c4 0 4 4 8 4s4-4 8-4"/></svg>
+            </span>
+            <div>
+              <strong>Cordas de segurança</strong>
+              <span>Estáticas e dinâmicas, várias secções</span>
+            </div>
+          </li>
+        </ul>
+        <div class="prod-cat__banner">
+          <img src="assets/images/produto-epi.webp" alt="EPIs de altura SPLW — arneses, cordas, antiquedas" loading="lazy" />
+        </div>
+      </article>
+
+      <!-- Categoria 3: EPIs Gerais -->
+      <article class="prod-cat">
+        <div class="prod-cat__head">
+          <div class="prod-cat__badge">03</div>
+          <div class="prod-cat__title">
+            <span class="prod-cat__tag">Proteção Individual B2B</span>
+            <h3>EPIs Gerais</h3>
+            <p>Toda a proteção individual para o trabalhador, do calçado ao capacete. Marcas certificadas para uso intensivo em construção, indústria e manutenção.</p>
+          </div>
+        </div>
+        <ul class="prod-grid prod-grid--dense">
+          <li class="prod-item">
+            <span class="prod-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 18h14l3-3v-3l-3-1V8l-4-2H6L3 9v9z"/><path d="M3 18v2h17v-2"/></svg>
+            </span>
+            <div>
+              <strong>Calçado de segurança</strong>
+              <span>Lavoro e outras marcas certificadas</span>
+            </div>
+          </li>
+          <li class="prod-item">
+            <span class="prod-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 19h14l-2-12H7L5 19z"/><path d="M9 7V4h6v3"/><path d="M9 13h6"/></svg>
+            </span>
+            <div>
+              <strong>Botas com biqueira de aço</strong>
+              <span>S1P, S3 e SBP para diferentes ambientes</span>
+            </div>
+          </li>
+          <li class="prod-item">
+            <span class="prod-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21v-7l-3-2V6a2 2 0 0 1 2-2h1v6l2 1V3h2v8l2-1V4h1a2 2 0 0 1 2 2v6l-3 2v7"/></svg>
+            </span>
+            <div>
+              <strong>Luvas anticorte</strong>
+              <span>Níveis A1 a F, EN 388</span>
+            </div>
+          </li>
+          <li class="prod-item">
+            <span class="prod-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21v-7l-3-2V6a2 2 0 0 1 2-2h1v6l2 1V3h2v8l2-1V4h1a2 2 0 0 1 2 2v6l-3 2v7"/><circle cx="12" cy="14" r="1" fill="currentColor"/></svg>
+            </span>
+            <div>
+              <strong>Luvas nitrílicas</strong>
+              <span>Descartáveis para químicos e manuseamento</span>
+            </div>
+          </li>
+          <li class="prod-item">
+            <span class="prod-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 14c0-5 4-9 8-9s8 4 8 9"/><path d="M3 14h18v3H3z"/><path d="M11 5V2h2v3"/></svg>
+            </span>
+            <div>
+              <strong>Capacetes de proteção</strong>
+              <span>EN 397, com e sem ventilação</span>
+            </div>
+          </li>
+          <li class="prod-item">
+            <span class="prod-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="7" cy="14" r="4"/><circle cx="17" cy="14" r="4"/><path d="M11 14h2"/><path d="M3 10l3-4h12l3 4"/></svg>
+            </span>
+            <div>
+              <strong>Óculos e viseiras</strong>
+              <span>Proteção mecânica, química e UV</span>
+            </div>
+          </li>
+          <li class="prod-item">
+            <span class="prod-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12a8 8 0 0 1 16 0"/><rect x="3" y="12" width="5" height="7" rx="2"/><rect x="16" y="12" width="5" height="7" rx="2"/></svg>
+            </span>
+            <div>
+              <strong>Abafadores auriculares</strong>
+              <span>Atenuação 25 a 35 dB</span>
+            </div>
+          </li>
+          <li class="prod-item">
+            <span class="prod-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8" cy="12" r="3"/><circle cx="16" cy="12" r="3"/></svg>
+            </span>
+            <div>
+              <strong>Tampões auriculares</strong>
+              <span>Descartáveis e moldáveis, EN 352</span>
+            </div>
+          </li>
+          <li class="prod-item">
+            <span class="prod-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12c0-3 2-6 8-6s8 3 8 6-2 6-8 6-8-3-8-6z"/><path d="M9 12h6"/></svg>
+            </span>
+            <div>
+              <strong>Máscaras FFP2 / FFP3</strong>
+              <span>Proteção respiratória, EN 149</span>
+            </div>
+          </li>
+          <li class="prod-item">
+            <span class="prod-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 4h10l-1 4h2v10l-3 4H9l-3-4V8h2L7 4z"/><path d="M9 12h6"/></svg>
+            </span>
+            <div>
+              <strong>Vestuário alta visibilidade</strong>
+              <span>Coletes, casacos e calças, EN ISO 20471</span>
+            </div>
+          </li>
+        </ul>
+        <div class="prod-cat__banner">
+          <img src="assets/images/produto-servicos.webp" alt="EPIs gerais SPLW — calçado, capacetes, luvas" loading="lazy" />
+        </div>
+      </article>
+
+      <div class="prod-foot">
+        <p>Precisa de catálogo completo, cotação ou consultoria técnica para a sua obra?</p>
+        <div class="prod-foot__actions">
+          <a href="#formulario" class="btn btn--primary btn--lg" data-cta="produtos-cotacao">Pedir Cotação</a>
+          <a href="#formulario" class="btn btn--ghost btn--lg" data-cta="produtos-diagnostico">Pedir Diagnóstico Gratuito</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASOS -->
+  <section class="casos" id="casos">
+    <div class="container">
+      <header class="section-head section-head--light">
+        <span class="eyebrow">Obras reais</span>
+        <h2>Obras reais, conformidade real</h2>
+      </header>
+
+      <div class="cases">
+        <article class="case">
+          <div class="case__media">
+            <img src="assets/images/case-industria.webp" alt="Linha de vida horizontal em cobertura industrial — SPLW" loading="lazy" />
+          </div>
+          <div class="case__body">
+            <span class="tag">Indústria</span>
+            <h3>1.200 m instalados sem parar a produção</h3>
+            <ul class="case__facts">
+              <li><strong>Situação:</strong> Cobertura ativa com acesso frequente, sem sistema certificado EN 795 e inspeção em falta há 3 anos.</li>
+              <li><strong>Intervenção:</strong> Projeto à medida, fabrico nacional em 2 semanas, instalação faseada em horário noturno.</li>
+              <li><strong>Resultado:</strong> Certificação obtida. Zero horas de paragem. Manutenção anual gerida pela SPLW.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="case">
+          <div class="case__media">
+            <img src="assets/images/case-telecom.webp" alt="Sistema vertical certificado EN 795 para torre 5G — SPLW" loading="lazy" />
+          </div>
+          <div class="case__body">
+            <span class="tag">Telecomunicações</span>
+            <h3>Torre 5G de 45 m equipada em 18 dias</h3>
+            <ul class="case__facts">
+              <li><strong>Situação:</strong> Operador de telecom em rollout acelerado. Torre nova sem sistema anti-queda. Prazo imovível.</li>
+              <li><strong>Intervenção:</strong> Projeto, fabrico e instalação de linha de vida vertical em 18 dias corridos.</li>
+              <li><strong>Resultado:</strong> Rollout cumprido. Técnicos com adesão total ao novo arnês desde o primeiro dia.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="case">
+          <div class="case__media">
+            <img src="assets/images/case-urbana.webp" alt="Segurança em cobertura histórica sem perfurar — SPLW" loading="lazy" />
+          </div>
+          <div class="case__body">
+            <span class="tag">Reabilitação Urbana</span>
+            <h3>Segurança em cobertura histórica sem perfurar</h3>
+            <ul class="case__facts">
+              <li><strong>Situação:</strong> Obra em edifício classificado. Restrições totais à intervenção estrutural. Fiscalização exigente.</li>
+              <li><strong>Intervenção:</strong> Sistema de ancoragem reversível projetado em consórcio com a Universidade de Coimbra.</li>
+              <li><strong>Resultado:</strong> Aprovação pela entidade gestora do património e pela ACT. Sem qualquer dano ao edifício.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+
+      <p class="casos__cta">
+        Quer um diagnóstico para a sua obra?
+        <a href="#formulario" data-cta="casos">Pedir Diagnóstico Gratuito.</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- TESTEMUNHOS -->
+  <section class="testemunhos" id="testemunhos">
+    <div class="container">
+      <header class="section-head">
+        <span class="eyebrow">Testemunhos</span>
+        <h2>O que dizem quem assina os planos de segurança</h2>
+      </header>
+      <div class="cards-3">
+        <article class="quote">
+          <p>"Depois de uma inspeção surpresa, percebi que tinha sistemas de ancoragem em risco crítico. A SPLW fez o diagnóstico, instalou em 2 semanas e fica connosco para as manutenções. Acabei com a ansiedade de gerir validades."</p>
+          <footer>
+            <strong>Miguel S.</strong>
+            <span>TSST, Construção e Manutenção Industrial, Porto</span>
+            <span class="quote__stars" aria-label="5 de 5 estrelas">★★★★★</span>
+          </footer>
+        </article>
+        <article class="quote">
+          <p>"O argumento decisivo foi o fabrico nacional. Em 3 semanas a linha de vida estava instalada e certificada. Um fornecedor estrangeiro levaria 2 meses. A obra não parou um único dia."</p>
+          <footer>
+            <strong>Ricardo M.</strong>
+            <span>Diretor Geral, Reabilitação Urbana, Lisboa</span>
+            <span class="quote__stars" aria-label="5 de 5 estrelas">★★★★★</span>
+          </footer>
+        </article>
+        <article class="quote">
+          <p>"O problema real era o conforto: a equipa simplesmente não usava os arneses. Desde que mudámos para os EPIs da SPLW, a adesão é total. Deixei de andar atrás deles — e as auditorias passam limpas."</p>
+          <footer>
+            <strong>Ana C.</strong>
+            <span>HSE Manager, Telecomunicações, Braga</span>
+            <span class="quote__stars" aria-label="5 de 5 estrelas">★★★★★</span>
+          </footer>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <header class="section-head">
+        <span class="eyebrow">FAQ</span>
+        <h2>Perguntas frequentes</h2>
+      </header>
+      <div class="accordion">
+        <details class="accordion__item">
+          <summary>O Diagnóstico é mesmo gratuito?</summary>
+          <p>Sim. O diagnóstico é uma cortesia técnica da SPLW. Não há compromisso de aquisição de produtos ou serviços.</p>
+        </details>
+        <details class="accordion__item">
+          <summary>Quanto tempo demora a responder ao questionário?</summary>
+          <p>Cerca de 5 minutos. Para obras mais complexas, pode demorar até 10 minutos.</p>
+        </details>
+        <details class="accordion__item">
+          <summary>Quem deve preencher: o TSST, o Diretor de Obra ou a Direção?</summary>
+          <p>Qualquer responsável com conhecimento das condições da obra. Idealmente, o TSST ou o Engenheiro de Segurança.</p>
+        </details>
+        <details class="accordion__item">
+          <summary>Que tipo de obras está coberto?</summary>
+          <p>Construção civil, reabilitação urbana, telecomunicações, energia eólica, indústria, manutenção industrial e qualquer estrutura com risco de queda em altura.</p>
+        </details>
+        <details class="accordion__item">
+          <summary>O que acontece depois de receber o relatório?</summary>
+          <p>Recebe o relatório por email em 24 horas. Pode falar com um técnico para esclarecer pontos. Se quiser avançar com uma intervenção, apresentamos proposta. Se não, fica com o relatório, sem compromisso.</p>
+        </details>
+        <details class="accordion__item">
+          <summary>Que normas são aplicáveis a linhas de vida em Portugal?</summary>
+          <p>Principalmente EN 795 (sistemas de ancoragem), EN 361 (arneses anti-queda) e legislação portuguesa, incluindo o Decreto-Lei nº 50/2005 e o enquadramento do Código do Trabalho.</p>
+        </details>
+        <details class="accordion__item">
+          <summary>A SPLW fabrica mesmo as linhas de vida em Portugal?</summary>
+          <p>Sim. Somos atualmente o único fabricante nacional de linhas de vida, com desenvolvimento em consórcio com a Universidade de Coimbra.</p>
+        </details>
+        <details class="accordion__item">
+          <summary>Para além de linhas de vida, vendem outro equipamento de proteção?</summary>
+          <p>Sim. Fornecemos a gama completa de EPIs gerais para obra: calçado de segurança (Lavoro e outras marcas), botas com biqueira de aço, luvas anticorte e nitrílicas, capacetes, óculos e viseiras, abafadores e tampões auriculares, máscaras FFP2/FFP3 e vestuário de alta visibilidade. Tudo certificado conforme as normas EN aplicáveis.</p>
+        </details>
+        <details class="accordion__item">
+          <summary>Têm stock disponível ou trabalham por encomenda?</summary>
+          <p>Os EPIs de uso corrente (luvas, calçado, capacetes, máscaras) têm stock para entrega rápida. Sistemas EPC (linhas de vida) e equipamentos especializados são produzidos por encomenda com prazo curto, dado o fabrico nacional.</p>
+        </details>
+        <details class="accordion__item">
+          <summary>Fornecem cotação para fornecimento contínuo a obras?</summary>
+          <p>Sim. Trabalhamos com contratos de fornecimento contínuo para construtoras, empresas de manutenção industrial e operadores de telecomunicações. Pedimos um briefing das necessidades mensais para apresentar condições.</p>
+        </details>
+        <details class="accordion__item">
+          <summary>Quanto custa uma linha de vida instalada?</summary>
+          <p>Depende do projeto. O diagnóstico ajuda a precisar a estimativa, e a proposta comercial é sempre adaptada à obra.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULÁRIO FINAL -->
+  <section class="cta-final" id="formulario">
+    <div class="container cta-final__grid">
+      <div class="cta-final__copy">
+        <span class="eyebrow eyebrow--light">Diagnóstico Gratuito</span>
+        <h2>Garanta hoje a conformidade da sua obra. Sem custos, sem compromisso.</h2>
+        <p>Em 24 horas, recebe um relatório técnico que pode poupar à sua empresa coimas, paragens e responsabilidade legal.</p>
+        <ul class="cta-final__bullets">
+          <li><span class="check check--light" aria-hidden="true"></span> Avaliação por técnicos certificados</li>
+          <li><span class="check check--light" aria-hidden="true"></span> Relatório personalizado por email</li>
+          <li><span class="check check--light" aria-hidden="true"></span> Apoio direto da equipa da SPLW</li>
+          <li><span class="check check--light" aria-hidden="true"></span> Sem compromisso de aquisição</li>
+        </ul>
+      </div>
+
+      <div class="cta-final__right">
+        <div class="form-urgency" aria-live="polite">
+          <span class="form-urgency__dot" aria-hidden="true"></span>
+          Esta semana, <strong>14 empresas</strong> já solicitaram o diagnóstico.
+          <span class="form-urgency__badge">Sem lista de espera</span>
+        </div>
+
+        <form class="form-card" id="leadForm" action="REPLACE_WITH_WEBHOOK_URL" method="POST" novalidate>
+        <h3>Pedir Diagnóstico Gratuito</h3>
+        <p class="form-card__sub">Gratuito, sem compromisso. Relatório em 24 h úteis.</p>
+
+        <div class="field">
+          <label for="nome">Nome <span aria-hidden="true">*</span></label>
+          <input id="nome" name="nome" type="text" required autocomplete="name" />
+        </div>
+
+        <div class="field">
+          <label for="empresa">Empresa <span aria-hidden="true">*</span></label>
+          <input id="empresa" name="empresa" type="text" required autocomplete="organization" />
+        </div>
+
+        <div class="field">
+          <label for="cargo">Cargo <span aria-hidden="true">*</span></label>
+          <select id="cargo" name="cargo" required>
+            <option value="">Selecione...</option>
+            <option value="TSST">Técnico Superior de Segurança no Trabalho (TSST)</option>
+            <option value="Diretor de Obra">Diretor de Obra</option>
+            <option value="Diretor Geral">Diretor Geral</option>
+            <option value="Engenheiro de Segurança">Engenheiro de Segurança</option>
+            <option value="Outro">Outro</option>
+          </select>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="email">Email profissional <span aria-hidden="true">*</span></label>
+            <input id="email" name="email" type="email" required autocomplete="email" />
+          </div>
+          <div class="field">
+            <label for="telefone">Telefone <span aria-hidden="true">*</span></label>
+            <input id="telefone" name="telefone" type="tel" required autocomplete="tel" />
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="tipo_pedido">O que precisa? <span aria-hidden="true">*</span></label>
+          <select id="tipo_pedido" name="tipo_pedido" required>
+            <option value="Diagnóstico Gratuito de Segurança">Diagnóstico Gratuito de Segurança</option>
+            <option value="Cotação de Produtos">Cotação de Produtos (EPC, EPI, EPIs Gerais)</option>
+            <option value="Inspeção e Manutenção">Inspeção e Manutenção Anual</option>
+            <option value="Consultoria Técnica">Consultoria Técnica</option>
+            <option value="Outro">Outro</option>
+          </select>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="tipo_obra">Tipo de obra <span aria-hidden="true">*</span></label>
+            <select id="tipo_obra" name="tipo_obra" required>
+              <option value="">Selecione...</option>
+              <option value="Construção Civil">Construção Civil</option>
+              <option value="Reabilitação Urbana">Reabilitação Urbana</option>
+              <option value="Telecomunicações">Telecomunicações</option>
+              <option value="Energia Eólica">Energia Eólica</option>
+              <option value="Indústria">Indústria</option>
+              <option value="Outro">Outro</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="n_trabalhadores">Trabalhadores em altura</label>
+            <select id="n_trabalhadores" name="n_trabalhadores">
+              <option value="">Selecione...</option>
+              <option value="1-5">1 a 5</option>
+              <option value="6-20">6 a 20</option>
+              <option value="21-50">21 a 50</option>
+              <option value="50+">Mais de 50</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="contexto">Contexto da obra (opcional)</label>
+          <textarea id="contexto" name="contexto" rows="3" placeholder="Conte-nos brevemente sobre o seu projeto..."></textarea>
+        </div>
+
+        <div class="field field--check">
+          <label>
+            <input type="checkbox" name="rgpd" required />
+            <span>Aceito a <a href="https://splw.pt/politica-privacidade/" target="_blank" rel="noopener">política de privacidade</a> e o tratamento dos meus dados pela SPLW para resposta a este pedido. <span aria-hidden="true">*</span></span>
+          </label>
+        </div>
+
+        <button type="submit" class="btn btn--primary btn--lg btn--block">
+          <span class="btn__label">Pedir Diagnóstico Gratuito</span>
+          <span class="btn__loading" hidden>A enviar...</span>
+        </button>
+
+        <p class="form-card__micro">Os seus dados são tratados de acordo com o RGPD. Não partilhamos com terceiros.</p>
+        <p class="form-card__error" id="formError" hidden></p>
+      </form>
+      </div><!-- /.cta-final__right -->
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="assets/images/splw-logo.svg" alt="SPLW" width="140" height="42" class="footer__logo" />
+        <p class="footer__tagline">holding life.</p>
+      </div>
+      <div class="footer__contact-col">
+        <p class="footer__contact">
+          Estr. Q.ta de Matos 4 A03 · 2630-179 Arruda dos Vinhos<br />
+          <a href="tel:+351913903118">(+351) 913 903 118</a> &nbsp;·&nbsp;
+          <a href="mailto:info@splw.pt">info@splw.pt</a>
+        </p>
+        <div class="footer__social">
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
+          <a href="https://www.instagram.com/splw.pt/" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <span>© <span id="year"></span> SPLW. Todos os direitos reservados.</span>
+        <nav>
+          <a href="https://splw.pt/politica-privacidade/" target="_blank" rel="noopener">Política de Privacidade</a>
+          <a href="https://www.livroreclamacoes.pt/" target="_blank" rel="noopener">Livro de Reclamações</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js" defer></script>
+</body>
+</html>

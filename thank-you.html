@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#FF4500" />
+  <title>Pedido recebido | SPLW</title>
+  <meta name="description" content="O seu pedido de Diagnóstico Gratuito de Segurança foi recebido. A equipa SPLW entra em contacto em 24 horas." />
+  <meta name="robots" content="noindex, follow" />
+  <link rel="icon" type="image/svg+xml" href="assets/images/splw-logo.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <!-- Meta Pixel, dispara Lead aqui (mesmo que JS já tenha disparado) -->
+  <!--
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'PIXEL_ID');
+    fbq('track', 'PageView');
+    fbq('track', 'Lead', { content_name: 'Diagnostico Gratuito Seguranca', source: 'thank_you_page' });
+  </script>
+  -->
+
+  <!-- GA4 thank you, conversão -->
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID');
+    gtag('event', 'generate_lead', { source: 'thank_you_page' });
+  </script>
+  -->
+
+  <style>
+    .ty {
+      min-height: 80vh;
+      display: flex; align-items: center; justify-content: center;
+      padding: 80px 24px;
+      background: linear-gradient(135deg, #0A0E1A 0%, #14182A 100%);
+      color: var(--white);
+      position: relative;
+      overflow: hidden;
+    }
+    .ty::before {
+      content: ""; position: absolute; top: -200px; left: -200px;
+      width: 600px; height: 600px;
+      background: radial-gradient(circle, rgba(255, 69, 0, .25), transparent 60%);
+    }
+    .ty__inner {
+      position: relative; z-index: 1;
+      max-width: 720px; text-align: center;
+    }
+    .ty__icon {
+      width: 80px; height: 80px;
+      background: var(--primary);
+      border-radius: 999px;
+      display: inline-flex; align-items: center; justify-content: center;
+      margin-bottom: 28px;
+      box-shadow: 0 12px 40px rgba(255, 69, 0, .4);
+    }
+    .ty__icon svg { width: 40px; height: 40px; color: var(--white); }
+    .ty h1 { color: var(--white); margin-bottom: 20px; }
+    .ty__lead { color: var(--gray-300); font-size: 1.15rem; margin-bottom: 40px; }
+    .ty__steps {
+      background: rgba(255, 255, 255, .04);
+      border: 1px solid rgba(255, 255, 255, .1);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      text-align: left;
+      margin-bottom: 32px;
+    }
+    .ty__steps h2 { font-size: 1.15rem; color: var(--white); margin-bottom: 20px; text-align: center; }
+    .ty__steps ol { padding-left: 0; list-style: none; counter-reset: tysteps; }
+    .ty__steps li {
+      counter-increment: tysteps;
+      position: relative;
+      padding: 12px 0 12px 48px;
+      color: var(--gray-200);
+      border-bottom: 1px solid rgba(255, 255, 255, .06);
+    }
+    .ty__steps li:last-child { border-bottom: none; }
+    .ty__steps li::before {
+      content: counter(tysteps);
+      position: absolute; left: 0; top: 14px;
+      width: 32px; height: 32px;
+      background: rgba(255, 69, 0, .15);
+      color: var(--primary);
+      border-radius: 999px;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700; font-size: .9rem;
+    }
+    .ty__actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+    .ty__contact {
+      margin-top: 32px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255, 255, 255, .08);
+      color: var(--gray-400); font-size: .92rem;
+    }
+    .ty__contact a { color: var(--primary); }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="https://splw.pt/" class="header__logo" aria-label="SPLW">
+        <img src="assets/images/splw-logo.svg" alt="SPLW" width="120" height="36" />
+      </a>
+    </div>
+  </header>
+
+  <main class="ty">
+    <div class="ty__inner">
+      <div class="ty__icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+          <polyline points="20 6 9 17 4 12"/>
+        </svg>
+      </div>
+
+      <h1>Pedido recebido. Obrigado!</h1>
+      <p class="ty__lead">
+        O seu pedido de Diagnóstico Gratuito de Segurança chegou bem.
+        Um técnico SPLW vai analisar a sua obra e enviar o relatório por email
+        nas próximas 24 horas úteis.
+      </p>
+
+      <div class="ty__steps">
+        <h2>O que acontece a seguir</h2>
+        <ol>
+          <li>Recebe um email de confirmação na sua caixa de entrada nos próximos minutos.</li>
+          <li>A equipa técnica analisa as suas respostas face a EN 795, EN 361 e legislação portuguesa.</li>
+          <li>Em 24 horas úteis, recebe o relatório personalizado com pontos críticos e plano de ação.</li>
+          <li>Pode agendar uma chamada técnica gratuita para esclarecer o relatório, se preferir.</li>
+        </ol>
+      </div>
+
+      <div class="ty__actions">
+        <a href="https://splw.pt/" class="btn btn--primary btn--lg">Conhecer mais a SPLW</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" class="btn btn--primary btn--lg" style="background: transparent; border: 2px solid var(--white);">Seguir-nos no LinkedIn</a>
+      </div>
+
+      <p class="ty__contact">
+        Não recebeu o email de confirmação?
+        Escreva-nos para <a href="mailto:info@splw.pt">info@splw.pt</a>
+        ou ligue <a href="tel:+351913903118">(+351) 913 903 118</a>.
+      </p>
+    </div>
+  </main>
+
+</body>
+</html>
