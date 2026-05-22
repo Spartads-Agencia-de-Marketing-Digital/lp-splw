@@ -1167,6 +1167,8 @@ html, body { overflow-x: hidden; }
   line-height: 1;
   margin-bottom: 8px;
 }
+.stat-item__num sup { font-size: .5em; vertical-align: super; line-height: 0; }
+.hero__lead sup { font-size: .65em; vertical-align: super; line-height: 0; }
 .stat-item__label {
   font-size: .8rem;
   color: var(--gray-400);
