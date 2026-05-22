@@ -1146,7 +1146,7 @@ html, body { overflow-x: hidden; }
 }
 .stats-strip__grid {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 24px;
   flex-wrap: wrap;
@@ -1166,9 +1166,6 @@ html, body { overflow-x: hidden; }
   color: var(--primary);
   line-height: 1;
   margin-bottom: 8px;
-  min-height: 1.1em;
-  display: flex;
-  align-items: flex-end;
 }
 .stat-item__num sup { font-family: 'Inter', Arial, sans-serif; font-size: .5em; vertical-align: super; line-height: 0; font-weight: 700; }
 .hero__lead sup { font-size: .65em; vertical-align: super; line-height: 0; }
