@@ -123,14 +123,14 @@
       // Modo placeholder, ainda não está configurado
       console.warn('[SPLW LP] form action não configurado, dados que seriam enviados:', data);
       window.setTimeout(function () {
-        window.location.href = 'thank-you.html';
+        window.location.href = '/thank-you.html';
       }, 800);
       return;
     }
 
     fetch(action, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
       body: JSON.stringify(data)
     })
       .then(function (res) {
@@ -144,7 +144,27 @@
           tipo_obra: data.tipo_obra,
           n_trabalhadores: data.n_trabalhadores || ''
         });
-        window.location.href = 'thank-you.html';
+
+        // Evento personalizado GTM
+        var redirected = false;
+        function goThankYou() {
+          if (redirected) return;
+          redirected = true;
+          window.location.href = '/thank-you.html';
+        }
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: 'lead_lp_splw',
+          form_id: 'leadForm',
+          tipo_obra: data.tipo_obra,
+          tipo_pedido: data.tipo_pedido || '',
+          cargo: data.cargo,
+          n_trabalhadores: data.n_trabalhadores || '',
+          eventCallback: goThankYou,
+          eventTimeout: 1500
+        });
+        // Fallback caso o GTM não responda (ex.: bloqueador de anúncios)
+        window.setTimeout(goThankYou, 1600);
       })
       .catch(function (err) {
         console.error('[SPLW LP] erro ao submeter:', err);
