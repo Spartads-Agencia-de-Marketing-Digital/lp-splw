@@ -135,15 +135,9 @@
     })
       .then(function (res) {
         if (!res.ok) throw new Error('Resposta inválida do servidor (' + res.status + ')');
-        // Conversão Meta
-        if (window.fbq) window.fbq('track', 'Lead', { content_name: 'Diagnostico Gratuito Seguranca' });
-        // Conversão GA4
-        if (window.gtag) window.gtag('event', 'generate_lead', {
-          form_id: 'leadForm',
-          cargo: data.cargo,
-          tipo_obra: data.tipo_obra,
-          n_trabalhadores: data.n_trabalhadores || ''
-        });
+
+        // As conversões (Meta Lead + GA4 generate_lead) são disparadas pelo GTM
+        // através do dataLayer.push abaixo. NÃO disparar fbq/gtag aqui — duplica o evento.
 
         // Evento personalizado GTM
         var redirected = false;
